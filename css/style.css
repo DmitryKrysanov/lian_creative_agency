@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,61 @@ body {
     height: 100%;
 }
 
+
+header {
+    background-color: #fff;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    -webkit-box-shadow: 0 0 6px 0 #bdbfbf;
+    box-shadow: 0 0 6px 0 #bdbfbf;
+}
+
+header:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header .wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+header .wrapper img {
+    float: left;
+}
+
+header .wrapper ul {
+    float: right;
+    margin-top: 12px;
+}
+
+header .wrapper ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+header .wrapper ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+header .wrapper ul li a:hover {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+}
+
+header .wrapper ul li a:hover:before {
+content: url("../images/highlight_line.svg");
+    margin-right: 18px;
+
+}
+
+
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
     width: 20px;
     height: 20px;
@@ -41,10 +97,6 @@ body {
     border: solid 4px transparent;
 }
 
-.owl-nav{
-    display: none;
-}
-
 .owl-dots{
     position: absolute;
     bottom: 56px;
@@ -52,6 +104,44 @@ body {
     text-align: center;
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.active{
+.owl-carousel button.owl-dot.active{
     border: solid 4px black;
+}
+
+.owl-prev {
+    background-color: red !important;
+    position: absolute;
+    left: 112px;
+    top: 40%;
+}
+
+.owl-next {
+    background-color: red !important;
+    position: absolute;
+    right: 112px;
+    top: 40%;
+}
+
+.owl-carousel .content {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 35%;
+}
+
+.owl-carousel .content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #fff;
+    background-color: #000;
+    padding: 0 46px;
+    margin-bottom: 32px;
+}
+
+.owl-carousel .content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
 }
