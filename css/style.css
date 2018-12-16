@@ -25,6 +25,7 @@ body {
     height: 100%;
 }
 
+/*header*/
 
 header {
     background-color: #fff;
@@ -49,17 +50,21 @@ header .wrapper img {
     float: left;
 }
 
-header .wrapper ul {
+/*menu*/
+
+header .wrapper nav ul {
     float: right;
     margin-top: 12px;
+    position: relative;
 }
 
-header .wrapper ul li {
+header .wrapper nav ul li {
     display: inline-block;
     margin-left: 40px;
+    position: relative;
 }
 
-header .wrapper ul li a {
+header .wrapper nav ul li a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -67,18 +72,42 @@ header .wrapper ul li a {
     text-transform: uppercase;
 }
 
-header .wrapper ul li a:hover {
+header .wrapper nav ul li a:hover {
     font-size: 14px;
     color: #000;
-    margin-left: 10px;
 }
 
-header .wrapper ul li a:hover:before {
-/*content: url("../images/highlight_line.svg");*/
+header .wrapper nav ul li:hover:before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #000;
     margin-right: 18px;
-
+    margin-bottom: 5px;
+    position: absolute;
+    left: -30px;
+    top: 8px;
 }
 
+header .wrapper .search {
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-top: 12px;
+    margin-left: 45px;
+}
+
+header .wrapper .search i {
+    color: #777;
+}
+
+header .wrapper .search i:hover {
+    color: #000;
+}
+
+/*menu end*/
+
+/*header end*/
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
     width: 20px;
