@@ -1,0 +1,78 @@
+/*@media screen and (min-width: 480px) and (max-width: 1200px){*/
+    /**/
+/*}*/
+
+@media only screen and (max-width: 768px) {
+
+    header .wrapper {
+       margin: 0 15px;
+    }
+
+    .owl-prev {
+        left: 15px;
+    }
+
+    .owl-next {
+        right: 15px;
+    }
+
+    .owl-dots{
+        bottom: 15px;
+    }
+
+    .owl-carousel .content h1 {
+        font-size: 42px;
+    }
+
+    .owl-carousel .content h2 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    header .wrapper img {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header .wrapper nav ul {
+        width: 100%;
+    }
+
+    header .wrapper nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .owl-prev {
+        display: none;
+    }
+
+    .owl-next {
+        display: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
+        width: 10px;
+        height: 10px;
+        margin: 0 16px;
+        border: solid 2px transparent;
+    }
+
+    .owl-carousel .content h1 {
+        font-size: 22px;
+        padding: 0 15px;
+        margin-bottom: 16px;
+    }
+
+    .owl-carousel .content h2 {
+        font-size: 10px;
+    }
+
+}
