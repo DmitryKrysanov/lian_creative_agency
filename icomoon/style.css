@@ -31,10 +31,13 @@
 .icon-next_arrow:before {
   content: "\e901";
   color: #fff;
+  margin-left: 3px;
+  line-height: 43px;
 }
 .icon-prev_arrow:before {
   content: "\e902";
   color: #fff;
+  line-height: 43px;
 }
 .icon-highlight_line:before {
   content: "\e903";
