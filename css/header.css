@@ -1,0 +1,77 @@
+header {
+  background-color: #fff;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  -webkit-box-shadow: 0 0 6px 0 #bdbfbf;
+  box-shadow: 0 0 6px 0 #bdbfbf;
+}
+
+header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header .wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header .wrapper img {
+  float: left;
+}
+
+header .wrapper nav ul {
+  float: right;
+  margin-top: 12px;
+  position: relative;
+}
+
+header .wrapper nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+}
+
+header .wrapper nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+header .wrapper nav ul li a:hover {
+  font-size: 14px;
+  color: #000;
+}
+
+header .wrapper nav ul li:hover:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  margin-right: 18px;
+  margin-bottom: 5px;
+  position: absolute;
+  left: -30px;
+  top: 8px;
+}
+
+header .wrapper .search {
+  width: 18px;
+  height: 18px;
+  float: right;
+  margin-top: 12px;
+  margin-left: 45px;
+}
+
+header .wrapper .search i {
+  color: #777;
+}
+
+header .wrapper .search i:hover {
+  color: #000;
+}
+
+/*# sourceMappingURL=header.css.map */
