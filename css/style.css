@@ -36,6 +36,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 header:after {
@@ -333,4 +334,13 @@ form button {
 .map {
     width: 100%;
     height: 360px;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile {
+    max-width: 358px;
 }
