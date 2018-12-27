@@ -39,12 +39,10 @@ header:after {
 header .wrapper {
   max-width: 1140px;
   margin: auto;
-}
-header .wrapper img {
-  float: left;
+  display: flex;
+  justify-content: space-between;
 }
 header .wrapper nav ul {
-  float: right;
   margin-top: 12px;
   position: relative;
 }

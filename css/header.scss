@@ -13,12 +13,10 @@ header {
   .wrapper {
     max-width: 1140px;
     margin: auto;
-    img {
-      float: left;
-    }
+    display: flex;
+    justify-content: space-between;
     nav {
       ul {
-        float: right;
         margin-top: 12px;
         position: relative;
         li {
