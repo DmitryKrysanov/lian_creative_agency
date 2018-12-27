@@ -1,0 +1,11 @@
+footer {
+  padding-top: 64px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -6px 6px 0 #bdbfbf;
+  box-shadow: 0 -6px 6px 0 #bdbfbf;
+}
+footer .wrapper {
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

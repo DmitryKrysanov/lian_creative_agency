@@ -2,6 +2,10 @@
 @import "main";
 @import "header";
 
+.owl-carousel {
+  margin-top: 90px;
+}
+
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
   width: 20px;
   height: 20px;
@@ -92,3 +96,39 @@
       }
     }
   }
+
+.gallery_filter {
+  padding: 30px 0;
+  text-align: center;
+  ul {
+    border-top: solid 1px $divider_color;
+    border-bottom: solid 1px $divider_color;
+    li {
+      display: inline-block;
+      padding: 10px 0;
+      margin-left: 16px;
+      &:after {
+        content: '/';
+        color: $divider_color;
+        margin-left: 18px;
+        font-size: 28px;
+      }
+      &:last-child:after {
+        display: none;
+      }
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 28px;
+        color: $gray_text_color;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    }
+  }
+
+@import "footer";

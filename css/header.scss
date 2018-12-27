@@ -1,15 +1,14 @@
 
 header {
   background-color: #fff;
+  width: 100%;
   padding-top: 26px;
   padding-bottom: 26px;
   -webkit-box-shadow: 0 0 6px 0 #bdbfbf;
   box-shadow: 0 0 6px 0 #bdbfbf;
-  &:after {
-    content: '';
-    clear: both;
-    display: block;
-  }
+  position: fixed;
+  z-index: 100;
+  top: 0;
   .wrapper {
     max-width: 1140px;
     margin: auto;
