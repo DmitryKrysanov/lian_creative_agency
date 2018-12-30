@@ -60,31 +60,31 @@ header .wrapper {
 }
 
 @media screen and (max-width: 375px) {
-  header .wrapper .nemu nav {
+  header .wrapper nav {
     display: block;
   }
 }
 
-header .wrapper .nemu nav ul {
+header .wrapper nav ul {
   margin-top: 12px;
   position: relative;
   display: inline-block;
 }
 
 @media screen and (max-width: 375px) {
-  header .wrapper .nemu nav ul {
+  header .wrapper nav ul {
     width: 100%;
   }
 }
 
-header .wrapper .nemu nav ul li {
+header .wrapper nav ul li {
   display: inline-block;
   margin-left: 40px;
   position: relative;
 }
 
 @media screen and (max-width: 375px) {
-  header .wrapper .nemu nav ul li {
+  header .wrapper nav ul li {
     width: 100%;
     text-align: center;
     margin-left: 0;
@@ -92,7 +92,7 @@ header .wrapper .nemu nav ul li {
   }
 }
 
-header .wrapper .nemu nav ul li a {
+header .wrapper nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -100,12 +100,12 @@ header .wrapper .nemu nav ul li a {
   text-transform: uppercase;
 }
 
-header .wrapper .nemu nav ul li a:hover {
+header .wrapper nav ul li a:hover {
   font-size: 14px;
   color: #000;
 }
 
-header .wrapper .nemu nav ul li:hover:before {
+header .wrapper nav ul li:hover:before {
   content: "";
   width: 20px;
   height: 1px;
@@ -117,19 +117,11 @@ header .wrapper .nemu nav ul li:hover:before {
   top: 8px;
 }
 
-header .wrapper .nemu .search {
-  width: 18px;
-  height: 18px;
-  float: right;
-  margin-top: 12px;
-  margin-left: 45px;
-}
-
-header .wrapper .nemu .search i {
-  color: #777;
-}
-
-header .wrapper .nemu .search i:hover {
+header .wrapper nav ul li:last-child:hover i {
   color: #000;
+}
+
+header .wrapper nav ul li:last-child:hover::before {
+  display: none;
 }
 /*# sourceMappingURL=header.css.map */

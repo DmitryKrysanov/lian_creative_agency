@@ -19,7 +19,6 @@ header {
     @include max-screen(768px) {
       margin: 0 15px;
     }
-  .nemu {
       nav {
         @include max-screen(375px) {
           display: block;
@@ -63,22 +62,14 @@ header {
               left: -30px;
               top: 8px;
             }
+            &:last-child:hover i { 
+              color: #000;
+            }
+            &:last-child:hover::before { 
+              display: none;
+            }
           }
-        }
-      }
-      .search {
-        width: 18px;
-        height: 18px;
-        float: right;
-        margin-top: 12px;
-        margin-left: 45px;
-        i {
-          color: #777;
-          &:hover {
-            color: #000;
-          }
-        }
-      }
+        } 
     }
   }
 }
