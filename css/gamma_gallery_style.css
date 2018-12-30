@@ -2,21 +2,22 @@
 
 /* Entypo Icon Font */
 @font-face {
-  font-family: 'entypo-selected';
-  src: url("../font/entypo-selected.eot");
-  src: 
-	  url("../font/entypo-selected.eot?#iefix") format('embedded-opentype'), 
-	  url("../font/entypo-selected.woff") format('woff'), 
-	  url("../font/entypo-selected.ttf") format('truetype'), 
-	  url("../font/entypo-selected.svg#entypo-selected") format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'entypo-selected';
+	src: url("../font/entypo-selected.eot");
+	src:
+			url("../font/entypo-selected.eot?#iefix") format('embedded-opentype'),
+			url("../font/entypo-selected.woff") format('woff'),
+			url("../font/entypo-selected.ttf") format('truetype'),
+			url("../font/entypo-selected.svg#entypo-selected") format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* Gamma Gallery Style */
 
 .gamma-container {
 	min-height: 200px;
+	text-align: center;
 }
 
 .gamma-gallery {
@@ -30,12 +31,12 @@
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
 .gamma-gallery:before,
 .gamma-gallery:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .gamma-gallery:after {
-    clear: both;
+	clear: both;
 }
 
 /**
@@ -63,12 +64,12 @@
 
 .gamma-description {
 	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	bottom: 20px;
-	right: 20px;
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	right: 16px;
 	text-align: center;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
@@ -85,26 +86,32 @@
 	filter: alpha(opacity=80);
 	opacity: 1;
 }
- 
+
 .gamma-description:before {
-	content: '';
+	content: url("../images/ic_cross.svg");
 	height: 100%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
 }
 
-.gamma-description:before,
-.gamma-description h3 {
-	display: inline-block;
-	vertical-align: middle;
-}
+/*.gamma-description:before,*/
+/*.gamma-description h3 {*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*}*/
 
-.gamma-description h3 {
-	width: 100%;
-	padding: 0 20px;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 2px;
-}
+/*.gamma-description h3 {*/
+/*width: 100%;*/
+/*padding: 0 20px;*/
+/*font-weight: 400;*/
+/*text-transform: uppercase;*/
+/*font-size: 16px;*/
+/*letter-spacing: 2px;*/
+/*}*/
 
 .gamma-buttons {
 	position: absolute;
@@ -160,7 +167,7 @@ button.gamma-btn-sspause:before {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	z-index: 10000;
 	text-align: center;
 	display:none;
@@ -184,28 +191,28 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-description-wrapper {
-	background: rgba(0,0,0,0.7);
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 10;
-	padding: 5px 0;
+background: rgba(0,0,0,0.7);
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 10;
+padding: 5px 0;
 }
 
 .gamma-single-view .gamma-description {
-	background: transparent;
-	position: relative;
-	bottom: auto;
-	left: auto;
-	right: auto;
-	top: auto;
+background: transparent;
+position: relative;
+bottom: auto;
+left: auto;
+right: auto;
+top: auto;
 }
 
 .gamma-single-view .gamma-description h3 {
-	font-size: 15px;
-	padding: 5px 0;
-	color: #fff;
+font-size: 15px;
+padding: 5px 0;
+color: #fff;
 }
 
 .gamma-nav span {
@@ -274,19 +281,19 @@ button.gamma-btn-sspause:before {
 
 /* Make some things unselectable. Remove where selection is needed: */
 
-.gamma-container img,
-.gamma-nav span,
-.gamma-buttons button,
-.gamma-description-wrapper,
-.gamma-description,
-.gamma-description h3 {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+/*.gamma-container img,*/
+/*.gamma-nav span,*/
+/*.gamma-buttons button,*/
+/*.gamma-description-wrapper,*/
+/*.gamma-description,*/
+/*.gamma-description h3 {*/
+/*-webkit-touch-callout: none;*/
+/*-webkit-user-select: none;*/
+/*-khtml-user-select: none;*/
+/*-moz-user-select: none;*/
+/*-ms-user-select: none;*/
+/*user-select: none;*/
+/*}*/
 
 @media screen and (max-width: 750px) {
 

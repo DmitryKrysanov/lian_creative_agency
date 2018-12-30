@@ -1,5 +1,4 @@
 /* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 html { height: 100%; }
 
@@ -14,23 +13,23 @@ html { height: 100%; }
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #fff;
-    font-weight: 300;
-    font-size: 15px;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    overflow-y: scroll;
-    overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 a {
@@ -86,11 +85,11 @@ a {
 	text-transform: uppercase;
 	z-index: 9999;
 	position: relative;
-	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 0 2px rgba(0,0,0,0.2);
 }
 
 .codrops-top a {
-	padding: 0px 10px;
+	padding: 0 10px;
 	letter-spacing: 1px;
 	color: #333;
 	text-shadow: 0 -1px 0 #fff;
@@ -118,12 +117,12 @@ a {
 }
 
 .codrops-demos a {
-    display: inline-block;
-    margin: 10px;
-    color: #666;
-    font-weight: 700;
-    line-height: 30px;
-    border-bottom: 4px solid transparent;
+	display: inline-block;
+	margin: 10px;
+	color: #666;
+	font-weight: 700;
+	line-height: 30px;
+	border-bottom: 4px solid transparent;
 }
 
 .codrops-demos a:hover {
@@ -147,16 +146,17 @@ a {
 }
 
 .loadmore {
-	padding: 10px;
-	background: #ddd;
+	display: inline-block !important;
+	text-align: center;
+	padding: 10px 24px;
+	background: #959595;
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: 3px;
 	font-weight: 700;
-	text-align: center;
+	/*text-align: center;*/
 	cursor: pointer;
-	margin: 10px 4px;
-	display: none;
+	margin: 36px 0 73px 0;
+	/*display: none;*/
 }
 
 .loadmore:hover {
