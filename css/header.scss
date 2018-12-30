@@ -1,4 +1,6 @@
 
+@import "main";
+
 header {
   background-color: #fff;
   width: 100%;
@@ -14,49 +16,67 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    nav {
-      ul {
-        margin-top: 12px;
-        position: relative;
-        li {
-          display: inline-block;
-          margin-left: 40px;
+    @include max-screen(768px) {
+      margin: 0 15px;
+    }
+  .nemu {
+      nav {
+        @include max-screen(375px) {
+          display: block;
+        }
+        ul {
+          margin-top: 12px;
           position: relative;
-          a {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 14px;
-            color: #777;
-            text-transform: uppercase;
-            &:hover {
-              font-size: 14px;
-              color: #000;
-              }
+          display: inline-block;
+          @include max-screen(375px) {
+            width: 100%;
+          }
+          li {
+            display: inline-block;
+            margin-left: 40px;
+            position: relative;
+            @include max-screen(375px) {
+              width: 100%;
+              text-align: center;
+              margin-left: 0;
+              margin-bottom: 15px;
             }
-          &:hover:before {
-            content: "";
-            width: 20px;
-            height: 1px;
-            background-color: #000;
-            margin-right: 18px;
-            margin-bottom: 5px;
-            position: absolute;
-            left: -30px;
-            top: 8px;
+            a {
+              font-family: 'Roboto', sans-serif;
+              font-weight: bold;
+              font-size: 14px;
+              color: #777;
+              text-transform: uppercase;
+              &:hover {
+                font-size: 14px;
+                color: #000;
+                }
+              }
+            &:hover:before {
+              content: "";
+              width: 20px;
+              height: 1px;
+              background-color: #000;
+              margin-right: 18px;
+              margin-bottom: 5px;
+              position: absolute;
+              left: -30px;
+              top: 8px;
+            }
           }
         }
       }
-    }
-    .search {
-      width: 18px;
-      height: 18px;
-      float: right;
-      margin-top: 12px;
-      margin-left: 45px;
-      i {
-        color: #777;
-        &:hover {
-          color: #000;
+      .search {
+        width: 18px;
+        height: 18px;
+        float: right;
+        margin-top: 12px;
+        margin-left: 45px;
+        i {
+          color: #777;
+          &:hover {
+            color: #000;
+          }
         }
       }
     }

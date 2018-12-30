@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+
 header {
   background-color: #fff;
   width: 100%;
@@ -21,18 +53,46 @@ header .wrapper {
           justify-content: space-between;
 }
 
-header .wrapper nav ul {
-  margin-top: 12px;
-  position: relative;
+@media screen and (max-width: 768px) {
+  header .wrapper {
+    margin: 0 15px;
+  }
 }
 
-header .wrapper nav ul li {
+@media screen and (max-width: 375px) {
+  header .wrapper .nemu nav {
+    display: block;
+  }
+}
+
+header .wrapper .nemu nav ul {
+  margin-top: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+@media screen and (max-width: 375px) {
+  header .wrapper .nemu nav ul {
+    width: 100%;
+  }
+}
+
+header .wrapper .nemu nav ul li {
   display: inline-block;
   margin-left: 40px;
   position: relative;
 }
 
-header .wrapper nav ul li a {
+@media screen and (max-width: 375px) {
+  header .wrapper .nemu nav ul li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+header .wrapper .nemu nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -40,12 +100,12 @@ header .wrapper nav ul li a {
   text-transform: uppercase;
 }
 
-header .wrapper nav ul li a:hover {
+header .wrapper .nemu nav ul li a:hover {
   font-size: 14px;
   color: #000;
 }
 
-header .wrapper nav ul li:hover:before {
+header .wrapper .nemu nav ul li:hover:before {
   content: "";
   width: 20px;
   height: 1px;
@@ -57,7 +117,7 @@ header .wrapper nav ul li:hover:before {
   top: 8px;
 }
 
-header .wrapper .search {
+header .wrapper .nemu .search {
   width: 18px;
   height: 18px;
   float: right;
@@ -65,11 +125,11 @@ header .wrapper .search {
   margin-left: 45px;
 }
 
-header .wrapper .search i {
+header .wrapper .nemu .search i {
   color: #777;
 }
 
-header .wrapper .search i:hover {
+header .wrapper .nemu .search i:hover {
   color: #000;
 }
 /*# sourceMappingURL=header.css.map */
