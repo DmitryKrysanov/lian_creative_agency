@@ -8,10 +8,25 @@
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
-  h1 {  
-    display: inline-block;
-    margin-top: 120px;
-  }
+    h1 {  
+      margin-top: 12%;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 48px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      padding: 0 35px;
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      margin-top: 40px;
+    }
 }
 
 .info {
@@ -130,7 +145,52 @@ form input::placeholder, textarea::placeholder {
   height: 360px;
 }
 
+.our-values {
+  text-align: center;
+  padding-top: 70px;
+  max-width: 600px;
+  margin: auto;
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+  }
+  p {
+  font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+}
 
+.tiles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px; 
+}
 
+.tile {
+  max-width: 354px;
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 25px 0 40px 0; 
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 30px;
+  }
+}
 
 @import "footer";
