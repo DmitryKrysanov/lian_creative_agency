@@ -1,28 +1,27 @@
 header {
   background-color: #fff;
+  width: 100%;
   padding-top: 26px;
   padding-bottom: 26px;
   -webkit-box-shadow: 0 0 6px 0 #bdbfbf;
   box-shadow: 0 0 6px 0 #bdbfbf;
-}
-
-header:after {
-  content: "";
-  clear: both;
-  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 
 header .wrapper {
   max-width: 1140px;
   margin: auto;
-}
-
-header .wrapper img {
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .wrapper nav ul {
-  float: right;
   margin-top: 12px;
   position: relative;
 }
@@ -34,7 +33,7 @@ header .wrapper nav ul li {
 }
 
 header .wrapper nav ul li a {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #777;
@@ -73,5 +72,4 @@ header .wrapper .search i {
 header .wrapper .search i:hover {
   color: #000;
 }
-
 /*# sourceMappingURL=header.css.map */

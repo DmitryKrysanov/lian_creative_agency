@@ -22,6 +22,11 @@ img {
 
 body {
   height: 100%;
+  background-color: #fafafa;
 }
 
+.wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
