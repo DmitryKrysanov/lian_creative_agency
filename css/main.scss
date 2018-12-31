@@ -4,11 +4,6 @@ $accent_color: #000;
 $divider_color: #e1e1e1;
 $gray_text_color: #777;
 
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
-  }
-}
 
 * {
   margin: 0;

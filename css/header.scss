@@ -1,5 +1,6 @@
 
 @import "main";
+@import "mixins";
 
 header {
   background-color: #fff;
@@ -19,72 +20,134 @@ header {
     @include max-screen(768px) {
       margin: 0 15px;
     }
-      nav {
+    nav {
+      @include max-screen(375px) {
+        display: none;
+      }
+      ul {
+        margin-top: 12px;
+        position: relative;
+        display: inline-block;
         @include max-screen(375px) {
-          display: block;
+          width: 100%;
         }
-        ul {
-          margin-top: 12px;
-          position: relative;
-          display: inline-block;
-          @include max-screen(375px) {
-            width: 100%;
-          }
-          li {
+        li {
             display: inline-block;
             margin-left: 40px;
             position: relative;
             @include max-screen(375px) {
-              width: 100%;
-              text-align: center;
-              margin-left: 0;
-              margin-bottom: 15px;
-            }
-            a {
-              font-family: 'Roboto', sans-serif;
-              font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 15px;
+          }
+          a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            color: #777;
+            text-transform: uppercase;
+            &:hover {
               font-size: 14px;
-              color: #777;
-              text-transform: uppercase;
-              &:hover {
-                font-size: 14px;
-                color: #000;
-                }
-              }
-            &:hover:before {
-              content: "";
-              width: 20px;
-              height: 1px;
-              background-color: #000;
-              margin-right: 18px;
-              margin-bottom: 5px;
-              position: absolute;
-              left: -30px;
-              top: 8px;
-            }
-            &:last-child:hover i { 
               color: #000;
             }
-            &:last-child:hover::before { 
-              display: none;
-            }
           }
-        } 
+          &:hover:before {
+            content: "";
+            width: 20px;
+            height: 1px;
+            background-color: #000;
+            margin-right: 18px;
+            margin-bottom: 5px;
+            position: absolute;
+            left: -30px;
+            top: 8px;
+          }
+          &:last-child:hover i { 
+            color: #000;
+          }
+          &:last-child:hover::before { 
+            display: none;
+          }
+        }
+      } 
+    }
+    .nav__mobile {
+      .burger {
+        display: none;
+        position: relative;
+        @include max-screen(375px){
+          display: block;
+        }
+        .burger-lines {
+          height: 2px;
+          width: 24px;
+          background-color: #000;
+          position: absolute;
+          top: 30%;
+          left: 4px;
+          &::before {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 24px;
+            background-color: #000;
+            margin-top: 6px;
+          }
+          &::after {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 24px;
+            background-color: #000;
+            margin-top: 4px;
+          }
+        }  
+        .burger-trigger {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+      .mobile-menu {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        transition: all 0.5s;
+        width: 100%;
+        background-color: #000;
+        .close-btn {
+          width: 24px;
+          height: 2px;
+          transform: rotate(45deg);
+          background-color: #fff;
+          position: absolute;
+          top: 42px;
+          right: 18px;
+          &::after {
+            content: " ";
+            display: block;
+            width: 24px;
+            height: 2px;
+            transform: rotate(90deg);
+            background-color: #fff;
+          }
+        }
+        li {
+          text-align: center;
+          padding: 10px 0;
+          a {
+            color: #fff;
+            text-align: center;
+          }
+        }
+      }
+      .mobile-menu__opened {
+        opacity: 1;
+      }
     }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

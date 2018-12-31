@@ -39,6 +39,25 @@
                     </a></li>
                 </ul>
             </nav>
+            <div class="nav__mobile">
+                    <div class="burger">
+                            <div class="burger-trigger"></div>
+                            <div class="burger-lines"></div>
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="close-btn"></div>
+                    <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">
+                                    <i class="icon-ic_search"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+            </div>    
     </div>
 </header>
 
@@ -276,6 +295,12 @@
     });
 
 </script>
-
+<script>
+$(function(){
+    $('.burger-trigger, .mobile-menu').click(function(){
+        $('.mobile-menu').toggleClass('mobile-menu__opened');
+    })
+})
+</script>
 </body>
 </html>

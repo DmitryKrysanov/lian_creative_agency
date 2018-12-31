@@ -61,7 +61,7 @@ header .wrapper {
 
 @media screen and (max-width: 375px) {
   header .wrapper nav {
-    display: block;
+    display: none;
   }
 }
 
@@ -123,5 +123,97 @@ header .wrapper nav ul li:last-child:hover i {
 
 header .wrapper nav ul li:last-child:hover::before {
   display: none;
+}
+
+header .wrapper .nav__mobile .burger {
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  header .wrapper .nav__mobile .burger {
+    display: block;
+  }
+}
+
+header .wrapper .nav__mobile .burger .burger-lines {
+  height: 2px;
+  width: 24px;
+  background-color: #000;
+  position: absolute;
+  top: 30%;
+  left: 4px;
+}
+
+header .wrapper .nav__mobile .burger .burger-lines::before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: #000;
+  margin-top: 6px;
+}
+
+header .wrapper .nav__mobile .burger .burger-lines::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: #000;
+  margin-top: 4px;
+}
+
+header .wrapper .nav__mobile .burger .burger-trigger {
+  height: 32px;
+  width: 32px;
+}
+
+header .wrapper .mobile-menu {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  background-color: #000;
+}
+
+header .wrapper .mobile-menu .close-btn {
+  width: 24px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+  position: absolute;
+  top: 42px;
+  right: 18px;
+}
+
+header .wrapper .mobile-menu .close-btn::after {
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 2px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #fff;
+}
+
+header .wrapper .mobile-menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header .wrapper .mobile-menu li a {
+  color: #fff;
+  text-align: center;
+}
+
+header .wrapper .mobile-menu__opened {
+  opacity: 1;
 }
 /*# sourceMappingURL=header.css.map */
