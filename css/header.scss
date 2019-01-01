@@ -73,6 +73,10 @@ header {
       } 
     }
     .nav__mobile {
+      display: none;
+      @include max-screen(375px){
+        display: block;
+      }
       .burger {
         display: none;
         position: relative;
@@ -110,14 +114,14 @@ header {
       }
     }
       .mobile-menu {
-        display: block;
-        opacity: 0;
+        display: none;
+        // opacity: 0;
         position: absolute;
         top: 0px;
         left: 0;
         padding-top: 60px;
         padding-bottom: 20px;
-        transition: all 0.5s;
+        // transition: all 0.5s;
         width: 100%;
         background-color: #000;
         .close-btn {
@@ -147,7 +151,8 @@ header {
         }
       }
       .mobile-menu__opened {
-        opacity: 1;
+        // opacity: 1;
+        display: block;
       }
     }
   }

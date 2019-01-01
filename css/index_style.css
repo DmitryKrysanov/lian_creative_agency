@@ -157,6 +157,16 @@ header .wrapper nav ul li:last-child:hover::before {
   display: none;
 }
 
+header .wrapper .nav__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  header .wrapper .nav__mobile {
+    display: block;
+  }
+}
+
 header .wrapper .nav__mobile .burger {
   display: none;
   position: relative;
@@ -201,15 +211,12 @@ header .wrapper .nav__mobile .burger .burger-trigger {
 }
 
 header .wrapper .mobile-menu {
-  display: block;
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0px;
   left: 0;
   padding-top: 60px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   width: 100%;
   background-color: #000;
 }
@@ -246,7 +253,7 @@ header .wrapper .mobile-menu li a {
 }
 
 header .wrapper .mobile-menu__opened {
-  opacity: 1;
+  display: block;
 }
 
 .owl-carousel {
