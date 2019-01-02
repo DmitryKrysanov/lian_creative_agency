@@ -26,7 +26,8 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1170px;
+  padding: 0 15px;
   margin: auto;
 }
 
@@ -58,7 +59,8 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1170px;
+  padding: 0 15px;
   margin: auto;
 }
 
@@ -157,6 +159,16 @@ header .wrapper nav ul li:last-child:hover::before {
   display: none;
 }
 
+header .wrapper .nav__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  header .wrapper .nav__mobile {
+    display: block;
+  }
+}
+
 header .wrapper .nav__mobile .burger {
   display: none;
   position: relative;
@@ -201,15 +213,12 @@ header .wrapper .nav__mobile .burger .burger-trigger {
 }
 
 header .wrapper .mobile-menu {
-  display: block;
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0px;
   left: 0;
   padding-top: 60px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   width: 100%;
   background-color: #000;
 }
@@ -246,14 +255,14 @@ header .wrapper .mobile-menu li a {
 }
 
 header .wrapper .mobile-menu__opened {
-  opacity: 1;
+  display: block;
 }
 
 .contact__header {
   margin-top: 68px;
   background-image: url("../images/contact_header.png");
   height: 350px;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -283,6 +292,12 @@ header .wrapper .mobile-menu__opened {
   padding: 82px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .info {
+    padding: 42px 0;
+  }
+}
+
 .info .wrapper:after {
   content: "";
   clear: both;
@@ -291,7 +306,8 @@ header .wrapper .mobile-menu__opened {
 
 /*office info */
 .office-info {
-  width: 30%;
+  max-width: 328px;
+  margin-right: 60px;
   float: left;
 }
 
@@ -345,29 +361,39 @@ header .wrapper .mobile-menu__opened {
 /*office info end */
 /*form*/
 form {
-  width: 60%;
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-form input {
+form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .form-row input {
   width: 47%;
   border: solid 1px #ebebeb;
   border-radius: 2px;
   height: 40px;
   line-height: 40px;
   padding-left: 12px;
-  margin-left: 37px;
   display: inline-block;
   margin-bottom: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-form input:first-of-type {
-  margin-left: 0;
-}
-
-form textarea {
+form .form-row textarea {
   display: block;
   width: 100%;
   border: solid 1px #ebebeb;
@@ -381,7 +407,7 @@ form textarea {
   resize: none;
 }
 
-form button {
+form .form-row button {
   background-color: #000;
   padding: 14px 55px;
   color: #fff;
@@ -458,11 +484,34 @@ form input::placeholder, textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .tiles {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .tile {
   max-width: 354px;
+}
+
+@media screen and (max-width: 768px) {
+  .tile {
+    margin-right: 15px;
+    margin-bottom: 60px;
+  }
+  .tile:nth-child(2) {
+    margin-right: 0;
+  }
+  .tile:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .tile h2 {
@@ -510,7 +559,8 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1170px;
+  padding: 0 15px;
   margin: auto;
 }
 
