@@ -228,11 +228,17 @@ header .wrapper .mobile-menu__opened {
 
 .contact__header {
   margin-top: 90px;
-  background-image: url("../images/contact_header.png");
+  position: relative;
+}
+.contact__header img {
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+}
+.contact__header .contact__header_content {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
 }
 .contact__header h1 {
   margin-top: 12%;
@@ -247,7 +253,7 @@ header .wrapper .mobile-menu__opened {
 }
 @media screen and (max-width: 414px) {
   .contact__header h1 {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 .contact__header h2 {
@@ -439,7 +445,6 @@ form input::placeholder, textarea::placeholder {
 }
 @media screen and (max-width: 768px) {
   .tile {
-    margin-right: 15px;
     margin-bottom: 60px;
   }
   .tile:nth-child(2) {
@@ -447,6 +452,9 @@ form input::placeholder, textarea::placeholder {
   }
   .tile:last-child {
     margin-bottom: 0;
+  }
+  .tile img {
+    width: 100%;
   }
 }
 .tile h2 {
