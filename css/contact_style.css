@@ -227,7 +227,7 @@ header .wrapper .mobile-menu__opened {
 }
 
 .contact__header {
-  margin-top: 68px;
+  margin-top: 90px;
   background-image: url("../images/contact_header.png");
   height: 100%;
   background-position: center center;
@@ -320,6 +320,11 @@ header .wrapper .mobile-menu__opened {
   font-weight: 600;
   color: #000;
 }
+@media screen and (max-width: 414px) {
+  .office-info p:last-child {
+    margin-bottom: 32px;
+  }
+}
 
 /*office info end */
 /*form*/
@@ -327,10 +332,20 @@ form {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 414px) {
+  form {
+    width: 100%;
+  }
+}
 form .form-row {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+@media screen and (max-width: 414px) {
+  form .form-row {
+    flex-direction: column;
+  }
 }
 form .form-row input {
   width: 47%;
@@ -342,6 +357,11 @@ form .form-row input {
   display: inline-block;
   margin-bottom: 32px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 414px) {
+  form .form-row input {
+    width: 100%;
+  }
 }
 form .form-row textarea {
   display: block;
@@ -497,6 +517,17 @@ footer .wrapper ul {
 footer .wrapper ul li {
   display: inline-block;
   margin: 0 28px;
+}
+@media screen and (max-width: 414px) {
+  footer .wrapper ul li {
+    margin-bottom: 32px;
+  }
+  footer .wrapper ul li:nth-child(6) {
+    margin-bottom: 0;
+  }
+  footer .wrapper ul li:last-child {
+    margin-bottom: 0;
+  }
 }
 footer .wrapper ul li a i {
   font-size: 14px;

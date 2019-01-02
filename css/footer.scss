@@ -17,6 +17,15 @@ footer {
       li {
         display: inline-block;
         margin: 0 28px;
+        @include max-screen($mobile_res) {
+          margin-bottom: 32px;
+          &:nth-child(6) {
+            margin-bottom: 0;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
         a {
           i {
             font-size: 14px;

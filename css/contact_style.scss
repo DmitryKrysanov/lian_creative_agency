@@ -2,9 +2,8 @@
 @import "header";
 
 .contact__header {
-  margin-top: 68px;
+  margin-top: 90px;
   background-image: url("../images/contact_header.png");
-  //height: 350px;
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,7 +48,6 @@
 /*office info */
 
 .office-info {
-  // width: 33%;
   max-width: 328px;
   margin-right: 60px;
   float: left;
@@ -92,6 +90,11 @@
       font-weight: 600;
       color: #000;
     }
+    @include max-screen($mobile_res) {
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
   }
 }
 
@@ -102,10 +105,16 @@
 form {
   display: flex;
   flex-direction: column;
+  @include max-screen($mobile_res) {
+    width: 100%;
+  }
   .form-row {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @include max-screen($mobile_res) {
+      flex-direction: column;
+    }
       input {
         width: 47%;
         border: solid 1px #ebebeb;
@@ -116,14 +125,9 @@ form {
         display: inline-block;
         margin-bottom: 32px;
         box-sizing: border-box;
-        // &::after {
-        //   content: " ";
-        //   display: block;
-        //   height: 20px;
-        //   width: 5px;
-        //   background-color: red;
-        //   position: absolute;
-        // }
+        @include max-screen($mobile_res) {
+          width: 100%;
+        }
       }
     textarea {
       display: block;

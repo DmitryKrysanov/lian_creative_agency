@@ -462,6 +462,17 @@ footer .wrapper ul li {
   display: inline-block;
   margin: 0 28px;
 }
+@media screen and (max-width: 414px) {
+  footer .wrapper ul li {
+    margin-bottom: 32px;
+  }
+  footer .wrapper ul li:nth-child(6) {
+    margin-bottom: 0;
+  }
+  footer .wrapper ul li:last-child {
+    margin-bottom: 0;
+  }
+}
 footer .wrapper ul li a i {
   font-size: 14px;
   color: #777;
