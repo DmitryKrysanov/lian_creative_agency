@@ -75,49 +75,38 @@ header {
   z-index: 100;
   top: 0;
 }
-
 header .wrapper {
   max-width: 1140px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media screen and (max-width: 768px) {
   header .wrapper {
     margin: 0 15px;
   }
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   header .wrapper nav {
     display: none;
   }
 }
-
 header .wrapper nav ul {
   margin-top: 12px;
   position: relative;
   display: inline-block;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   header .wrapper nav ul {
     width: 100%;
   }
 }
-
 header .wrapper nav ul li {
   display: inline-block;
   margin-left: 40px;
   position: relative;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   header .wrapper nav ul li {
     width: 100%;
     text-align: center;
@@ -125,20 +114,17 @@ header .wrapper nav ul li {
     margin-bottom: 15px;
   }
 }
-
 header .wrapper nav ul li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #777;
   text-transform: uppercase;
 }
-
 header .wrapper nav ul li a:hover {
   font-size: 14px;
   color: #000;
 }
-
 header .wrapper nav ul li:hover:before {
   content: "";
   width: 20px;
@@ -150,36 +136,29 @@ header .wrapper nav ul li:hover:before {
   left: -30px;
   top: 8px;
 }
-
 header .wrapper nav ul li:last-child:hover i {
   color: #000;
 }
-
 header .wrapper nav ul li:last-child:hover::before {
   display: none;
 }
-
 header .wrapper .nav__mobile {
   display: none;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   header .wrapper .nav__mobile {
     display: block;
   }
 }
-
 header .wrapper .nav__mobile .burger {
   display: none;
   position: relative;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   header .wrapper .nav__mobile .burger {
     display: block;
   }
 }
-
 header .wrapper .nav__mobile .burger .burger-lines {
   height: 2px;
   width: 24px;
@@ -188,7 +167,6 @@ header .wrapper .nav__mobile .burger .burger-lines {
   top: 30%;
   left: 4px;
 }
-
 header .wrapper .nav__mobile .burger .burger-lines::before {
   content: " ";
   display: block;
@@ -197,7 +175,6 @@ header .wrapper .nav__mobile .burger .burger-lines::before {
   background-color: #000;
   margin-top: 6px;
 }
-
 header .wrapper .nav__mobile .burger .burger-lines::after {
   content: " ";
   display: block;
@@ -206,12 +183,10 @@ header .wrapper .nav__mobile .burger .burger-lines::after {
   background-color: #000;
   margin-top: 4px;
 }
-
 header .wrapper .nav__mobile .burger .burger-trigger {
   height: 32px;
   width: 32px;
 }
-
 header .wrapper .mobile-menu {
   display: none;
   position: absolute;
@@ -222,38 +197,31 @@ header .wrapper .mobile-menu {
   width: 100%;
   background-color: #000;
 }
-
 header .wrapper .mobile-menu .close-btn {
   width: 24px;
   height: 2px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background-color: #fff;
   position: absolute;
   top: 42px;
   right: 18px;
 }
-
 header .wrapper .mobile-menu .close-btn::after {
   content: " ";
   display: block;
   width: 24px;
   height: 2px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   background-color: #fff;
 }
-
 header .wrapper .mobile-menu li {
   text-align: center;
   padding: 10px 0;
 }
-
 header .wrapper .mobile-menu li a {
   color: #fff;
   text-align: center;
 }
-
 header .wrapper .mobile-menu__opened {
   display: block;
 }
@@ -261,16 +229,15 @@ header .wrapper .mobile-menu__opened {
 .contact__header {
   margin-top: 68px;
   background-image: url("../images/contact_header.png");
-  height: 350px;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .contact__header h1 {
   margin-top: 12%;
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 48px;
   color: #fff;
@@ -278,9 +245,13 @@ header .wrapper .mobile-menu__opened {
   background-color: #000;
   padding: 0 35px;
 }
-
+@media screen and (max-width: 414px) {
+  .contact__header h1 {
+    font-size: 32px;
+  }
+}
 .contact__header h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
@@ -291,7 +262,6 @@ header .wrapper .mobile-menu__opened {
 .info {
   padding: 82px 0;
 }
-
 @media screen and (max-width: 768px) {
   .info {
     padding: 42px 0;
@@ -310,49 +280,42 @@ header .wrapper .mobile-menu__opened {
   margin-right: 60px;
   float: left;
 }
-
 .office-info h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-bottom: 16px;
 }
-
 .office-info h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #2f302f;
   margin-bottom: 44px;
 }
-
 .office-info h4::after {
   content: "_________";
   display: block;
   color: #000;
 }
-
 .office-info p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #777;
   line-height: 24px;
   margin-bottom: 32px;
 }
-
 .office-info p:nth-child(5) {
   margin-bottom: 0;
   font-weight: 600;
 }
-
 .office-info p:last-child {
   font-weight: 600;
   margin-bottom: 0;
 }
-
 .office-info p span {
   font-weight: 600;
   color: #000;
@@ -361,25 +324,14 @@ header .wrapper .mobile-menu__opened {
 /*office info end */
 /*form*/
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 form .form-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 form .form-row input {
   width: 47%;
   border: solid 1px #ebebeb;
@@ -389,10 +341,8 @@ form .form-row input {
   padding-left: 12px;
   display: inline-block;
   margin-bottom: 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 form .form-row textarea {
   display: block;
   width: 100%;
@@ -402,16 +352,14 @@ form .form-row textarea {
   padding-left: 12px;
   padding-top: 12px;
   margin-bottom: 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   resize: none;
 }
-
 form .form-row button {
   background-color: #000;
   padding: 14px 55px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   border: none;
@@ -419,29 +367,8 @@ form .form-row button {
   text-transform: uppercase;
 }
 
-form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #bababa;
-}
-
-form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #bababa;
-}
-
-form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #bababa;
-}
-
 form input::placeholder, textarea::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 14px;
   color: #bababa;
@@ -458,18 +385,16 @@ form input::placeholder, textarea::placeholder {
   max-width: 600px;
   margin: auto;
 }
-
 .our-values h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-bottom: 40px;
 }
-
 .our-values p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #777;
@@ -478,29 +403,20 @@ form input::placeholder, textarea::placeholder {
 }
 
 .tiles {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
-
 @media screen and (max-width: 768px) {
   .tiles {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
 .tile {
   max-width: 354px;
 }
-
 @media screen and (max-width: 768px) {
   .tile {
     margin-right: 15px;
@@ -513,18 +429,16 @@ form input::placeholder, textarea::placeholder {
     margin-bottom: 0;
   }
 }
-
 .tile h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin: 25px 0 40px 0;
 }
-
 .tile p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #777;
@@ -570,11 +484,9 @@ footer {
   -webkit-box-shadow: 0 -2px 6px 0 #f3f3f3;
   box-shadow: 0 -2px 6px 0 #f3f3f3;
 }
-
 footer .wrapper {
   text-align: center;
 }
-
 footer .wrapper ul {
   margin-top: 44px;
   margin-bottom: 37px;
@@ -582,30 +494,26 @@ footer .wrapper ul {
   border-top: solid 1px #e1e1e1;
   border-bottom: solid 1px #e1e1e1;
 }
-
 footer .wrapper ul li {
   display: inline-block;
   margin: 0 28px;
 }
-
 footer .wrapper ul li a i {
   font-size: 14px;
   color: #777;
   line-height: 14px;
 }
-
 footer .wrapper ul li a i:hover {
   color: #000;
 }
-
 footer .wrapper p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #777;
 }
-
 footer .wrapper p span {
   color: #000;
 }
+
 /*# sourceMappingURL=contact_style.css.map */

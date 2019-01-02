@@ -21,21 +21,21 @@ header {
       margin: 0 15px;
     }
     nav {
-      @include max-screen(375px) {
+      @include max-screen(414px) {
         display: none;
       }
       ul {
         margin-top: 12px;
         position: relative;
         display: inline-block;
-        @include max-screen(375px) {
+        @include max-screen(414px) {
           width: 100%;
         }
         li {
             display: inline-block;
             margin-left: 40px;
             position: relative;
-            @include max-screen(375px) {
+            @include max-screen(414px) {
             width: 100%;
             text-align: center;
             margin-left: 0;
@@ -74,13 +74,13 @@ header {
     }
     .nav__mobile {
       display: none;
-      @include max-screen(375px){
+      @include max-screen(414px){
         display: block;
       }
       .burger {
         display: none;
         position: relative;
-        @include max-screen(375px){
+        @include max-screen(414px){
           display: block;
         }
         .burger-lines {
