@@ -2,20 +2,47 @@
 @import "header";
 
 .contact__header {
-  margin-top: 68px;
-  background-image: url("../images/contact_header.png");
-  height: 350px;
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  h1 {  
-    display: inline-block;
-    margin-top: 120px;
+  margin-top: 90px;
+  position: relative;
+  img {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
+  .contact__header_content {
+    position: absolute;
+    z-index: 1;
+    top: 22%;
+  }
+    h1 {  
+      margin-top: 12%;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 48px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      padding: 0 35px;
+      @include max-screen($mobile_res) {
+        font-size: 40px;
+      }
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      margin-top: 40px;
+    }
 }
 
 .info {
   padding: 82px 0;
+  @include max-screen($tablet_res) {
+    padding: 42px 0;
+  }
 }
 
 .info .wrapper:after {
@@ -27,7 +54,8 @@
 /*office info */
 
 .office-info {
-  width: 30%;
+  max-width: 328px;
+  margin-right: 60px;
   float: left;
   h3 {
     font-family: 'Roboto', sans-serif;
@@ -68,6 +96,11 @@
       font-weight: 600;
       color: #000;
     }
+    @include max-screen($mobile_res) {
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
   }
 }
 
@@ -76,45 +109,55 @@
 /*form*/
 
 form {
-  width: 60%;
-  float: right;
-  input {
-    width: 47%;
-    border: solid 1px #ebebeb;
-    border-radius: 2px;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 12px;
-    margin-left: 37px;
-    display: inline-block;
-    margin-bottom: 32px;
-    box-sizing: border-box;
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
-  textarea {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  @include max-screen($mobile_res) {
     width: 100%;
-    border: solid 1px #ebebeb;
-    border-radius: 2px;
-    height: 150px;
-    padding-left: 12px;
-    padding-top: 12px;
-    margin-bottom: 32px;
-    box-sizing: border-box;
-    resize: none;
   }
-  button {
-    background-color: #000;
-    padding: 14px 55px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    border-radius: 2px;
-    text-transform: uppercase;
+  .form-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include max-screen($mobile_res) {
+      flex-direction: column;
+    }
+      input {
+        width: 47%;
+        border: solid 1px #ebebeb;
+        border-radius: 2px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 12px;
+        display: inline-block;
+        margin-bottom: 32px;
+        box-sizing: border-box;
+        @include max-screen($mobile_res) {
+          width: 100%;
+        }
+      }
+    textarea {
+      display: block;
+      width: 100%;
+      border: solid 1px #ebebeb;
+      border-radius: 2px;
+      height: 150px;
+      padding-left: 12px;
+      padding-top: 12px;
+      margin-bottom: 32px;
+      box-sizing: border-box;
+      resize: none;
+    }
+    button {
+      background-color: #000;
+      padding: 14px 55px;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -130,7 +173,71 @@ form input::placeholder, textarea::placeholder {
   height: 360px;
 }
 
+.our-values {
+  text-align: center;
+  padding-top: 70px;
+  max-width: 600px;
+  margin: auto;
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+  }
+  p {
+  font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+}
 
+.tiles {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px; 
+  @include max-screen($tablet_res) {
+  }
+}
 
+.tile {
+  max-width: 354px;
+  @include max-screen($tablet_res) {
+    margin-bottom: 60px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+    }
+    @include max-screen($mobile_res) {
+      max-width: 100%;
+    }
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 25px 0 40px 0; 
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 30px;
+  }
+}
 
 @import "footer";
