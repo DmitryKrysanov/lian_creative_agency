@@ -430,16 +430,11 @@ form input::placeholder, textarea::placeholder {
 
 .tiles {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 768px) {
-  .tiles {
-    justify-content: center;
-  }
-}
-
 .tile {
   max-width: 354px;
 }

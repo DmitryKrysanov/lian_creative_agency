@@ -198,11 +198,11 @@ form input::placeholder, textarea::placeholder {
 
 .tiles {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 60px; 
   @include max-screen($tablet_res) {
-    justify-content: center;
   }
 }
 
