@@ -89,7 +89,7 @@ header {
           background-color: #000;
           position: absolute;
           top: 30%;
-          left: 4px;
+          left: 8px;
           &::before {
             content: " ";
             display: block;
@@ -131,7 +131,7 @@ header {
           background-color: #fff;
           position: absolute;
           top: 42px;
-          right: 18px;
+          right: 30px;
           &::after {
             content: " ";
             display: block;

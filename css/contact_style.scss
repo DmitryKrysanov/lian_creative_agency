@@ -209,7 +209,6 @@ form input::placeholder, textarea::placeholder {
 .tile {
   max-width: 354px;
   @include max-screen($tablet_res) {
-    //margin-right: 15px;
     margin-bottom: 60px;
     &:nth-child(2) {
       margin-right: 0;
@@ -219,6 +218,9 @@ form input::placeholder, textarea::placeholder {
     }
     img {
       width: 100%;
+    }
+    @include max-screen($mobile_res) {
+      max-width: 100%;
     }
   }
   h2 {

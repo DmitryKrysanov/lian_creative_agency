@@ -1,28 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  -webkit-font-smoothing: antialiased;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a {
-  outline: none;
-  text-decoration: none;
-}
-
-img {
-  border: none;
-}
-
 body {
   height: 100%;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -31,31 +10,10 @@ body {
   margin: auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  -webkit-font-smoothing: antialiased;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a {
-  outline: none;
-  text-decoration: none;
-}
-
-img {
-  border: none;
-}
-
 body {
   height: 100%;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -165,7 +123,7 @@ header .wrapper .nav__mobile .burger .burger-lines {
   background-color: #000;
   position: absolute;
   top: 30%;
-  left: 4px;
+  left: 8px;
 }
 header .wrapper .nav__mobile .burger .burger-lines::before {
   content: " ";
@@ -204,7 +162,7 @@ header .wrapper .mobile-menu .close-btn {
   background-color: #fff;
   position: absolute;
   top: 42px;
-  right: 18px;
+  right: 30px;
 }
 header .wrapper .mobile-menu .close-btn::after {
   content: " ";
@@ -452,6 +410,11 @@ form input::placeholder, textarea::placeholder {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 414px) {
+  .tile {
+    max-width: 100%;
+  }
+}
 .tile h2 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -468,31 +431,10 @@ form input::placeholder, textarea::placeholder {
   line-height: 30px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  -webkit-font-smoothing: antialiased;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a {
-  outline: none;
-  text-decoration: none;
-}
-
-img {
-  border: none;
-}
-
 body {
   height: 100%;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 .wrapper {
