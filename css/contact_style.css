@@ -10,6 +10,128 @@ body {
   margin: auto;
 }
 
+.wrapper_975 {
+  max-width: 975px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.wrapper_810 {
+  max-width: 840px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 0 35px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+  line-height: 24px;
+}
+p span {
+  font-weight: 600;
+  color: #000;
+}
+
+blockquote {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #777;
+  line-height: 30px;
+  font-style: italic;
+}
+
+input {
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  padding-left: 12px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  resize: none;
+}
+textarea:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+button {
+  background-color: #000;
+  padding: 14px 55px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+form input::placeholder, textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #bababa;
+}
+
 body {
   height: 100%;
   background-color: #fafafa;
@@ -20,6 +142,128 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: auto;
+}
+
+.wrapper_975 {
+  max-width: 975px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.wrapper_810 {
+  max-width: 840px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 0 35px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+  line-height: 24px;
+}
+p span {
+  font-weight: 600;
+  color: #000;
+}
+
+blockquote {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #777;
+  line-height: 30px;
+  font-style: italic;
+}
+
+input {
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  padding-left: 12px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  resize: none;
+}
+textarea:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+button {
+  background-color: #000;
+  padding: 14px 55px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+form input::placeholder, textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #bababa;
 }
 
 header {
@@ -441,6 +685,128 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: auto;
+}
+
+.wrapper_975 {
+  max-width: 975px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.wrapper_810 {
+  max-width: 840px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 0 35px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+  line-height: 24px;
+}
+p span {
+  font-weight: 600;
+  color: #000;
+}
+
+blockquote {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #777;
+  line-height: 30px;
+  font-style: italic;
+}
+
+input {
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #ebebeb;
+  border-radius: 2px;
+  padding-left: 12px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  resize: none;
+}
+textarea:focus {
+  border-left: solid 4px #c8c8c8;
+}
+
+button {
+  background-color: #000;
+  padding: 14px 55px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+form input::placeholder, textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #bababa;
 }
 
 footer {
