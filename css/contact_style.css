@@ -27,6 +27,12 @@ body {
   margin: auto;
 }
 
+.wrapper_536 {
+  max-width: 566px;
+  padding: 0 15px;
+  margin: auto;
+}
+
 h1 {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -152,7 +158,6 @@ form input::placeholder, textarea::placeholder {
 }
 .contact__header img {
   height: 100%;
-  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -182,6 +187,11 @@ form input::placeholder, textarea::placeholder {
   border-right: solid 1px #ebebeb;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 414px) {
+  .nav_button {
+    min-width: 100px;
+  }
 }
 
 .icon-right i {
@@ -227,6 +237,12 @@ body {
   margin: auto;
 }
 
+.wrapper_536 {
+  max-width: 566px;
+  padding: 0 15px;
+  margin: auto;
+}
+
 h1 {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -352,7 +368,6 @@ form input::placeholder, textarea::placeholder {
 }
 .contact__header img {
   height: 100%;
-  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -382,6 +397,11 @@ form input::placeholder, textarea::placeholder {
   border-right: solid 1px #ebebeb;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 414px) {
+  .nav_button {
+    min-width: 100px;
+  }
 }
 
 .icon-right i {
@@ -836,6 +856,12 @@ body {
   margin: auto;
 }
 
+.wrapper_536 {
+  max-width: 566px;
+  padding: 0 15px;
+  margin: auto;
+}
+
 h1 {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -961,7 +987,6 @@ form input::placeholder, textarea::placeholder {
 }
 .contact__header img {
   height: 100%;
-  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -991,6 +1016,11 @@ form input::placeholder, textarea::placeholder {
   border-right: solid 1px #ebebeb;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 414px) {
+  .nav_button {
+    min-width: 100px;
+  }
 }
 
 .icon-right i {

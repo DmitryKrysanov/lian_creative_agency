@@ -30,9 +30,10 @@
 
 @media (max-width: 768px) {
   .gallery .thumbs {
-    height: 80px;
+    /*height: 80px;*/
     overflow-x: auto;
     overflow-y: hidden;
+
   }
 }
 
@@ -67,8 +68,8 @@
 
 @media (max-width: 768px) {
   .gallery .thumbs .thumb {
-    width: 65px;
-    height: 65px;
+    width: 23%;
+    /*height: 116px;*/
   }
 }
 
