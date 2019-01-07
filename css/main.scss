@@ -1,4 +1,6 @@
 
+@import "mixins";
+
 $bg_color: #fafafa;
 $accent_color: #000;
 $divider_color: #e1e1e1;
@@ -7,11 +9,18 @@ $gray_text_color: #777;
 $tablet_res: 768px;
 $mobile_res: 414px;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   background-color: $bg_color;
   overflow-x: hidden;
 }
+
+//wrappers
 
 .wrapper {
   max-width: 1170px;
@@ -30,6 +39,10 @@ body {
   padding: 0 15px;
   margin: auto;
 }
+
+//wrappers and
+
+//fonts
 
 h1 {
   display: inline-block;
@@ -64,7 +77,6 @@ h4 {
   font-size: 16px;
   font-weight: 700;
   color: #333;
-  //line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -73,6 +85,15 @@ h5 {
   font-size: 14px;
   font-weight: 700;
   color: #777;
+}
+
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #071f08;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 p {
@@ -96,6 +117,10 @@ blockquote {
   line-height: 30px;
   font-style: italic;
 }
+
+//fonts end
+
+//form
 
 input {
   border: solid 1px #ebebeb;
@@ -142,3 +167,68 @@ form input::placeholder, textarea::placeholder {
   font-size: 14px;
   color: #bababa;
 }
+
+//form end
+
+//page banner
+
+.contact__header {
+  margin-top: 90px;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .contact__header_content {
+    position: absolute;
+    z-index: 1;
+    top: 22%;
+  }
+  h1 {
+    margin-top: 12%;
+    @include max-screen($mobile_res) {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    margin-top: 40px;
+  }
+}
+
+//page banner end
+
+//buttons
+
+.nav_button {
+  display: block;
+  padding: 26px 0;
+  text-align: center;
+  min-width: 164px;
+  border-left: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-right {
+    i {
+      font-size: 8px;
+      color: #000;
+      margin-left: 14px;
+      margin-top: 3px;
+    }
+}
+
+.icon-left {
+  i {
+    font-size: 8px;
+    color: #000;
+    margin-right: 14px;
+    margin-top: 3px;
+  }
+}
+
+
+//buttons end

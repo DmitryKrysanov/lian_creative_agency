@@ -560,112 +560,116 @@ header .wrapper .mobile-menu__opened {
   display: block;
 }
 
-.contact__header {
-  margin-top: 90px;
-  position: relative;
+.project-details__nav {
+  background-color: #fff;
 }
-.contact__header img {
-  height: 100%;
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-.contact__header .contact__header_content {
-  position: absolute;
-  z-index: 1;
-  top: 22%;
-}
-.contact__header h1 {
-  margin-top: 12%;
-}
-@media screen and (max-width: 414px) {
-  .contact__header h1 {
-    font-size: 40px;
-  }
-}
-.contact__header h2 {
-  margin-top: 40px;
-}
-
-.post {
-  text-align: center;
-}
-.post h3 {
-  margin-bottom: 16px;
-}
-.post .post-info h5 {
-  margin-bottom: 24px;
-  display: inline-block;
-}
-@media screen and (max-width: 320px) {
-  .post .post-info h5 {
-    display: block;
-  }
-}
-.post .post-info h5:nth-child(2) {
-  margin: 0 60px;
-}
-@media screen and (max-width: 414px) {
-  .post .post-info h5:nth-child(2) {
-    margin: 0 30px;
-  }
-}
-.post img {
-  margin-bottom: 50px;
-  width: 100%;
-}
-.post .post-text {
-  text-align: left;
-}
-.post .post-text p {
-  margin-bottom: 46px;
-}
-.post .quote {
-  border: solid 1px #c8c8c8;
-  border-left: solid 4px #c8c8c8;
-  text-align: left;
-  margin-bottom: 42px;
-}
-
-.leave_comment {
-  text-align: center;
-}
-.leave_comment form {
-  margin-bottom: 86px;
-}
-.leave_comment form .form-row {
+.project-details__nav .project-nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
 }
-@media screen and (max-width: 414px) {
-  .leave_comment form .form-row {
-    flex-direction: column;
-  }
+.project-details__nav .project-nav__left {
+  display: flex;
 }
-.leave_comment form .form-row input {
-  width: 249px;
-  background: none;
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 143px;
+}
+.project-details .project-info {
+  padding-top: 70px;
+  max-width: 550px;
+}
+.project-details .project-info .project-info__header {
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 26px;
+  margin-bottom: 30px;
+}
+.project-details .project-info .project-info__header h3 {
+  margin-bottom: 16px;
+}
+.project-details .project-info .project-info__header h4 {
+  text-transform: capitalize;
+  color: #777;
+}
+.project-details .project-info .project-info__content {
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 58px;
+  margin-bottom: 30px;
+}
+.project-details .project-info .project-info__content h5 {
+  display: inline-block;
+}
+.project-details .project-info .project-info__content .favorite-btn {
+  margin-left: 65px;
+}
+.project-details .project-info .project-info__content .favorite-btn i {
+  font-size: 13px;
+  color: #777;
+  margin-right: 8px;
+}
+.project-details .project-info p {
+  margin-top: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  line-height: 30px;
+}
+.project-details .roles, .project-details .tags {
+  margin-bottom: 56px;
+}
+.project-details .roles p, .project-details .tags p {
+  margin-top: 22px;
+  line-height: 16px;
+}
+.project-details .project-gallery {
+  max-width: 550px;
+}
+
+/*.share_trigger {
+  height: 100px;
+  width: 100px;
+  background-color: #071f08;
+}*/
+.share {
+  position: relative;
+}
+.share .share-menu {
+  padding: 14px 19px;
+  background-color: #e1e1e1;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  display: none;
+}
+.share .share-menu li {
+  display: inline-block;
+  margin-right: 26px;
+}
+.share .share-menu li a i {
+  font-size: 14px;
+  color: #707070;
+}
+.share .share_btn {
+  display: flex;
+  justify-content: center;
+  width: 86px;
+  padding: 16px 12px;
+  background-color: #707070;
+  border-radius: 2px;
+  position: relative;
+}
+.share .share_btn:hover .share-menu {
   display: block;
-  margin-bottom: 22px;
 }
-@media screen and (max-width: 768px) {
-  .leave_comment form .form-row input {
-    width: 200px;
-  }
+.share .share_btn i {
+  font-size: 11px;
+  color: #fff;
+  margin-right: 7px;
+  margin-top: 3px;
 }
-@media screen and (max-width: 414px) {
-  .leave_comment form .form-row input {
-    width: 100%;
-  }
-}
-.leave_comment form .form-row textarea {
-  background: none;
-  margin-bottom: 24px;
-  height: 112px;
-}
-.leave_comment form .form-row:last-child {
-  display: block;
-  margin: auto;
+.share .share_btn h6 {
+  color: #fff;
 }
 
 * {
@@ -917,4 +921,4 @@ footer .wrapper p span {
   color: #000;
 }
 
-/*# sourceMappingURL=single_post_style.css.map */
+/*# sourceMappingURL=portfolio_details_style.css.map */
