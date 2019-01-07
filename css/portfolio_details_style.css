@@ -572,12 +572,11 @@ header .wrapper .mobile-menu__opened {
 }
 
 .project-details {
+  padding: 70px 0 143px !important;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 143px;
 }
 .project-details .project-info {
-  padding-top: 70px;
   max-width: 550px;
 }
 .project-details .project-info .project-info__header {
@@ -626,29 +625,43 @@ header .wrapper .mobile-menu__opened {
   max-width: 550px;
 }
 
-/*.share_trigger {
-  height: 100px;
-  width: 100px;
-  background-color: #071f08;
-}*/
 .share {
   position: relative;
 }
 .share .share-menu {
+  display: none;
   padding: 14px 19px;
+  border-radius: 2px;
   background-color: #e1e1e1;
   position: absolute;
   top: 0px;
-  left: 120px;
-  display: none;
+  left: 125px;
+}
+.share .share-menu:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  background-color: #e1e1e1;
+  top: 17px;
+  left: -4px;
 }
 .share .share-menu li {
   display: inline-block;
   margin-right: 26px;
 }
+.share .share-menu li:last-child {
+  margin-right: 0;
+}
 .share .share-menu li a i {
   font-size: 14px;
   color: #707070;
+}
+.share .share-menu__opened {
+  display: block;
 }
 .share .share_btn {
   display: flex;
@@ -670,6 +683,13 @@ header .wrapper .mobile-menu__opened {
 }
 .share .share_btn h6 {
   color: #fff;
+}
+.share .share_btn__active {
+  background-color: #000;
+}
+
+.project-gallery {
+  width: 100%;
 }
 
 * {

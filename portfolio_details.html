@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
     <link rel="stylesheet" href="css/portfolio_details_style.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.1.js"
+            integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
+            crossorigin="anonymous"></script>
+    <script src="js/gallery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
 </head>
 <body>
 <header>
@@ -104,7 +113,6 @@
         </div>
 
         <div class="share">
-            <!--<div class="share_trigger"></div>-->
             <div class="share_btn">
                 <i class="icon-ic_share"></i>
                 <h6>Share</h6>
@@ -123,8 +131,40 @@
         </div>
     </div>
     <div class="project-gallery">
+        <div class="gallery">
+            <div class="images">
+                <div class="image active">
+                    <div class="content" style="background-image: url(images/project_image_1.png)"></div>
 
-        sdssdcds
+                </div>
+                <div class="image">
+                    <div class="content" style="background-image: url(images/project_image_2.png)"></div>
+                </div>
+                <div class="image">
+                    <div class="content" style="background-image: url(images/project_image_3.png)"></div>
+                </div>
+                <div class="image">
+                    <div class="content" style="background-image: url(images/project_image_4.png)"></div>
+                </div>
+            </div>
+            <div class="thumbs">
+                <div class="thumb active" style="background-image: url(images/project_image_1.png)">
+                    <!--<div class="overlay"></div>-->
+                </div>
+
+                <div class="thumb" style="background-image: url(images/project_image_2.png)">
+                    <!--<div class="overlay"></div>-->
+                </div>
+                <div class="thumb" style="background-image: url(images/project_image_3.png)">
+                    <!--<div class="overlay"></div>-->
+                </div>
+                <div class="thumb" style="background-image: url(images/project_image_4.png)">
+                    <!--<div class="overlay"></div>-->
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 
@@ -152,14 +192,21 @@
     </div>
 </footer>
 
-<!--<script>-->
-    <!--$(function(){-->
-        <!--$('.share_trigger').click(function(){-->
-            <!--$('.share-menu').toggleClass('.share-menu__opened');-->
-        <!--})-->
-    <!--})-->
-<!--</script>-->
+<script>
+    $(function(){
+        $('.share_btn').click(function(){
+            $('.share-menu').toggleClass('share-menu__opened');
+            $('.share_btn').toggleClass('share_btn__active');
+        })
+    })
+</script>
 
+<script>
+    $(function () {
+        $('.gallery').gallery();
+    });
+
+</script>
 
 </body>
 </html>

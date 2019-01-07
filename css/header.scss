@@ -115,7 +115,6 @@ header {
     }
       .mobile-menu {
         display: none;
-        // opacity: 0;
         position: absolute;
         top: 0px;
         left: 0;
@@ -151,7 +150,6 @@ header {
         }
       }
       .mobile-menu__opened {
-        // opacity: 1;
         display: block;
       }
     }
